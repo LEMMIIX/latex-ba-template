@@ -32,5 +32,5 @@ sind pull requests mit entsprechenden Änderungen willkommen.
 
 
 
-  [1]https://www.overleaf.com/latex/templates/vorlage-bachelorarbeit-informatik-westfalische-hochschule/ympzbtzjqhdd
-  [2]https://github.com/lervag/vimtex
+  [1]: https://www.overleaf.com/latex/templates/vorlage-bachelorarbeit-informatik-westfalische-hochschule/ympzbtzjqhdd
+  [2]: https://github.com/lervag/vimtex
