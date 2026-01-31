@@ -9,8 +9,8 @@ Dies ist ein Klon des [Overleaf templates von Nico Hülscher][1] (veröf. 17. Ju
 1. erfordert, dass LaTeX installiert ist
 2. den LaTeX- oder anderen Texteditor mit LaTeX-Erweiterung (bspw. [VimTeX][2] für Vim und NeoVim)
 3. Unbedingt kompilieren mit "LuaLaTeX + MakeIndex + BibTeX"
-3.1 TeXworks editor: "LuaLaTeX + MakeIndex + BibTeX"
-3.2 VimTex NeoVim Beispielconfig (lua):
+    1. TeXworks editor: "LuaLaTeX + MakeIndex + BibTeX"
+    2. VimTex NeoVim Beispielconfig (lua):
 ```lua
 return {
 	"lervag/vimtex",
