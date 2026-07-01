@@ -1,14 +1,15 @@
-\documentclass[chapterprefix=false, 12pt, a4paper, oneside, parskip=half, listof=totoc, bibliography=totoc, numbers=noendperiod]{article}
+\documentclass[12pt, a4paper, oneside]{article}
 
 %\renewcommand{\familydefault}{\sfdefault}
 %\usepackage{helvet}
 
 
-%Anpassung der Seitenränder (Standard bottom ca. 52mm abzüglich von ca. 4mm für die nach oben rechts gewanderte Seitenzahl)
-\usepackage[bottom=35mm,left=25mm,right=25mm]{geometry}
+% Seitenränder gemäß Richtlinie
+\usepackage[top=20mm,bottom=20mm,left=30mm,right=25mm,includehead]{geometry}
 
 \usepackage{csquotes}
 \usepackage[round,sort&compress, authoryear]{natbib}
+\setcitestyle{authoryear,round,aysep={, },yysep={;},notesep={, }}
 \bibliographystyle{plainnat}
 
 %Tweaks für scrbook
@@ -21,6 +22,7 @@
 
 %Erlaubt unter anderem Umbrüche captions
 \usepackage{caption}
+\captionsetup{font=normalsize}
 
 %Stichwortverzeichnis
 \usepackage{imakeidx}
@@ -39,6 +41,11 @@
 \usepackage[automark,headsepline]{scrlayer-scrpage}
 %\input{resources/styles/header_footer}
 \setlength{\parindent}{0em}
+\setlength{\parskip}{6pt}
+\clearpairofpagestyles
+\ohead{\normalfont\normalsize\pagemark}
+\renewcommand*{\headfont}{\normalfont}
+\pagestyle{scrheadings}
 
 %\renewcommand\chapter{\thispagestyle{plain}}
 
@@ -48,6 +55,11 @@
 
 %Zeilenabstand 1,5
 \usepackage[onehalfspacing]{setspace}
+\usepackage{etoolbox}
+\AtBeginEnvironment{thebibliography}{\singlespacing}
+\AtBeginEnvironment{table}{\singlespacing}
+\AtBeginEnvironment{tabular}{\singlespacing}
+\AtBeginEnvironment{longtable}{\singlespacing}
 
 %Verbesserte Darstellung der Buchstaben zueinander
 \usepackage[stretch=10]{microtype}
@@ -55,11 +67,9 @@
 %Deutsche Bezeichnungen für angezeigte Namen (z.B. Inhaltsverzeichnis etc.)
 \usepackage[ngerman]{babel}
 
-%Unterstützung von Umlauten und anderen Sonderzeichen (UTF-8)
-\usepackage{lmodern}
-\usepackage[utf8]{luainputenc}
-\usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+% Hauptschrift gemäß Richtlinie
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
 \setlength{\emergencystretch}{1em}
 
 %Einfachere Zitate

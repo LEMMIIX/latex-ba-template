@@ -81,35 +81,31 @@ keepaspectratio]{resources/images/deckblatt.png}%
 \newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
-\usepackage{fontspec}
-\setmainfont{Arial}
-
 \begin{document}
 
-% Entfernen der Seitenzahlen und BackroundPic als Hintergrund nutzen
-\pagenumbering{gobble}
+% Deckblatt ohne sichtbare Seitenzahl, aber als erste Seite mitgezählt
 \AddToShipoutPicture{\BackgroundPic}
 
 % Titelblatt erzeugen
 \maketitle
-\newpage
 
-% Eidesstattliche Erklärung erzeugen
+% Eidesstattliche Erklärung an früherer Position
 \makeeidesstatt
-\thispagestyle{empty}
-
-% Abstract und Inhaltsverzeichnisse einfügen (Numerierung römisch ab Inhaltsverzeichnis)
-\input{chapter/0_Abstract.tex}
 \ClearShipoutPicture
-\thispagestyle{empty}
-\newpage
 \pagenumbering{Roman}
+\setcounter{page}{2}
+
+% Abstract und Verzeichnisse vor dem Textteil römisch nummerieren
+\input{chapter/0_Abstract.tex}
+\newpage
 \tableofcontents
 \newpage
 \listoffigures
 \newpage
+\input{chapter/KI_Verzeichnis.tex}
+\newpage
 
-% Kapitel einfügen
+% Kapitel ab hier arabisch nummerieren
 \pagenumbering{arabic}
 \input{chapter/1_Einleitung.tex}
 \newpage

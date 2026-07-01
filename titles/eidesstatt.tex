@@ -3,8 +3,9 @@
 \newcommand*{\place}[1]{\gdef\@place{#1}}
 
 \newcommand*{\makeeidesstatt}{
-	\begin{titlepage}
-		\newgeometry{left=3.8cm,right=2.5cm,top=8cm,bottom=2.5cm}
+	\clearpage
+	\newgeometry{top=20mm,bottom=20mm,left=30mm,right=25mm,includehead}
+	\thispagestyle{scrheadings}
 			\begingroup
 			\fontsize{18pt}{20pt}\selectfont
 			{\bfseries Eidesstattliche Versicherung}
@@ -63,7 +64,6 @@
 			\endgroup
 
 
-		\restoregeometry
-	\end{titlepage}
+	\restoregeometry
 }
 \makeatother
