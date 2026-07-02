@@ -99,5 +99,9 @@
 %Grafiken von Text umlaufen lassen
 \usepackage{wrapfig}
 
+%Erlaubt das Linebreaking von URLs an beliebiger alphanummerischen Stelle 
+\usepackage{xurl}
 %Ermöglicht Verknüpfungen innerhalb des Dokumentes (e.g. for PDF), Links werden durch "hidelink" nicht explizit hervorgehoben
 \usepackage[hidelinks,german]{hyperref}
+%Aktiviert das Linebreaking von URLs. Ist extrem wichtig bei sher langen Links, dass diese nicht über den Seitenrand laufen
+\hypersetup{breaklinks=true}
