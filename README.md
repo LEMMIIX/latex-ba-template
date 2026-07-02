@@ -25,6 +25,12 @@ return {
 }
 ```
 
+## Hinweis
+
+*"Ich kriege beim kompilieren komische Fehler wie `main.tex|93 warning| Overfull \hbox (8.53589pt too wide) in paragraph at lines 93--93`"*
+
+Ich auch. Da die Vorgaben der Hochschule nicht auf LaTeX angepasst sind, beschwert sich das Programm über manche Sachen vom Layout, die kannst du ignorieren. 
+
 # Lizenz
 
 Die originale Lizenz wird hier beibehalten. Sollte sich das offizielle Design/Format der WHS für Informatik ändern,
