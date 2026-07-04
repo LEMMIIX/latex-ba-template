@@ -31,6 +31,10 @@ return {
 
 Ich auch. Da die Vorgaben der Hochschule nicht auf LaTeX angepasst sind, beschwert sich das Programm über manche Sachen vom Layout, die kannst du ignorieren. 
 
+# Aussehen
+
+Wie die gerenderte Arbeit aussieht, kannst du in [`Beispiel.pdf`](Beispiel.pdf) checken, das ist das Produkt aus dem Latex code den du hier siehst.
+
 # Lizenz
 
 Die originale Lizenz wird hier beibehalten. Sollte sich das offizielle Design/Format der WHS für Informatik ändern,
