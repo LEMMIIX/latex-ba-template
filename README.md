@@ -25,7 +25,7 @@ return {
 }
 ```
 
-## Hinweis
+## Warnungen/Fehler
 
 *"Ich kriege beim kompilieren komische Fehler wie `main.tex|93 warning| Overfull \hbox (8.53589pt too wide) in paragraph at lines 93--93`"*
 
@@ -33,7 +33,13 @@ Ich auch. Da die Vorgaben der Hochschule nicht auf LaTeX angepasst sind, beschwe
 
 # Aussehen
 
-Wie die gerenderte Arbeit aussieht, kannst du in [`Beispiel.pdf`](Beispiel.pdf) checken, das ist das Produkt aus dem Latex code den du hier siehst.
+Wie die gerenderte Arbeit aussieht, kannst du in der [Beispiel.pdf](Beispiel.pdf) checken, das ist das Produkt aus dem Latex code den du hier siehst.
+
+# Bereit für den Druck?
+
+Stelle sicher, dass in [`main.tex`](main.tex) die Zeile `\listoftodos` entfernt ist, damit deine TODO-Liste nicht im Druck erscheint.
+
+Wenn du deine Arbeit <u>beidseitig</u> bedrucken lassen möchtest, ändere in [`settings.tex`](resources/settings/settings.tex) in der zweiten Zeile das "oneside" zu "twoside".
 
 # Lizenz
 

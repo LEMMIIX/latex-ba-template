@@ -89,13 +89,17 @@ keepaspectratio]{resources/images/deckblatt.png}%
 % Titelblatt erzeugen
 \maketitle
 
-% Eidesstattliche Erklärung an früherer Position
+%die ersten Seiten vor dem tatsächlichen Text werden römisch nummeriert
+\pagenumbering{Roman}
+
+% Eidesstattliche Erklärung
 \makeeidesstatt
 \ClearShipoutPicture
-\pagenumbering{Roman}
 \setcounter{page}{2}
 
-% Abstract und Verzeichnisse vor dem Textteil römisch nummerieren
+% Abstract und Verzeichnisse
+\input{chapter/0_Kurzfassung.tex}
+\newpage
 \input{chapter/0_Abstract.tex}
 \newpage
 \tableofcontents
