@@ -17,3 +17,8 @@ Es gibt auch die Möglichkeit, zwei Bilder direkt nebeneinander darzustellen:
     \end{subfigure}
     \caption{Zusammenstellung mehrerer Bilder}\label{fig:bild6}
 \end{figure}
+
+
+Um referenzieren auf Kapitel innerhalb deiner Arbeit zu erleichtern, ist in der \lstinline{resources/settings/macros.tex} folgender Befehl hinterlegt: \lstinline!\vgl{String_Kapitelname}{String_label}!. Bei dieser Nutzung \lstinline!\vgl{Einleitung}{sec:einleitung}! wird dies so gerendert: \enquote{\vgl{Einleitung}{sec:einleitung}}. Das erspart dir möglicherweise Zeit beim schreiben.
+
+Zusätzlich kannst du \lstinline!\Vgl! nutzen, um den Vergleich groß zu schreiben, wenn dieser hinter einem Punkt steht. \Vgl{Analyse}{sec:analyse}.
