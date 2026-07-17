@@ -4,8 +4,8 @@
 
 \newcommand*{\makeeidesstatt}{
 	\clearpage
-	\newgeometry{top=20mm,bottom=20mm,left=30mm,right=25mm,includehead}
-	\thispagestyle{scrheadings}
+	\newgeometry{top=20mm,bottom=20mm,inner=40mm,outer=20mm,includehead}
+	\thispagestyle{empty}
 			\begingroup
 			\fontsize{18pt}{20pt}\selectfont
 			{\bfseries Eidesstattliche Versicherung}
@@ -65,5 +65,6 @@
 
 
 	\restoregeometry
+	\clearpage
 }
 \makeatother

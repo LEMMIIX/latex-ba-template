@@ -89,14 +89,14 @@ keepaspectratio]{resources/images/deckblatt.png}%
 
 % Titelblatt erzeugen
 \maketitle
-
-%die ersten Seiten vor dem tatsächlichen Text werden römisch nummeriert
-\pagenumbering{Roman}
+\thispagestyle{empty}
 
 % Eidesstattliche Erklärung
 \makeeidesstatt
 \ClearShipoutPicture
-\setcounter{page}{2}
+
+%die ersten Seiten vor dem tatsächlichen Text werden römisch nummeriert
+\pagenumbering{Roman}
 
 % Abstract und Verzeichnisse
 \input{chapter/0_Kurzfassung.tex}
@@ -112,9 +112,11 @@ keepaspectratio]{resources/images/deckblatt.png}%
 
 % Kapitel ab hier arabisch nummerieren
 \pagenumbering{arabic}
+
 %TODO WICHTIG entferne die folgenden Zeilen wenn du ready für den Druck bist...
 \listoftodos
 \todo{entfernen sobald fertig für Druck}
+\newpage
 %... denn es wäre peinlich deine Todos im fertigen Druck zu sehen
 
 \input{chapter/1_Einleitung.tex}
